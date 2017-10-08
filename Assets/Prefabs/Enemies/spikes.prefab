@@ -110,6 +110,10 @@ MonoBehaviour:
   speed: 0
   isStationary: 1
   enemyDamage: 1
+  enemyMaxHealth: 1
+  enemyCurrentHealth: 0
+  dyingSound: {fileID: 0}
+  dyingEffect: {fileID: 0}
 --- !u!212 &212351765607548146
 SpriteRenderer:
   m_ObjectHideFlags: 1

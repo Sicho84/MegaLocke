@@ -19,13 +19,6 @@ public class LevelLoader : MonoBehaviour {
             previousSceneIndex = currentSceneIndex - 1;
        }
 
-        string nextSceneString = nextSceneIndex.ToString();
-        string currentSceneString = currentSceneIndex.ToString();
-        Debug.Log(currentSceneIndex);
-        Debug.Log(nextSceneIndex);
-        Debug.Log("Next Scene Index " + nextSceneString);
-        Debug.Log("Current Scene Index " + currentSceneString);
-
     }
 
     public void NextLevel()

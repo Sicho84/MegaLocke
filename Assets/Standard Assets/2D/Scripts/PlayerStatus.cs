@@ -41,7 +41,7 @@ public class PlayerStatus : MonoBehaviour {
             }
         }
     }
-    void Die()
+    public void Die()
     {
         //when player dies, restart current level
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
