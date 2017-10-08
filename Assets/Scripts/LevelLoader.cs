@@ -55,4 +55,9 @@ public class LevelLoader : MonoBehaviour {
     {
         SceneManager.LoadScene("HowtoPlay");
     }
+
+    public void LoadMainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
 }

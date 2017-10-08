@@ -9,6 +9,7 @@ public class PlayerStatus : MonoBehaviour {
     //player stats
     public int currentHealth;
     public int maxHealth = 5;
+    public AudioClip damageSound; //sfx that plays when player gets damaged
 
 
 
@@ -56,6 +57,9 @@ public class PlayerStatus : MonoBehaviour {
         //play damage animation
 
         GetComponent<Animation>().Play("Player_Damaged");
+
+        //play damage sound
+        AudioSource.PlayClipAtPoint(damageSound, transform.position,1);
 
         //apply knockback
         PlatformerCharacter2D player;

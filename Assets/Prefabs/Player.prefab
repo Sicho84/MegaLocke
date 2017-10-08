@@ -189,9 +189,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1124380396502956}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.692322, y: -0.23860154, z: 0}
-  m_LocalScale: {x: 0.5644829, y: 0.56448364, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4336228517329904}
   m_RootOrder: 4
@@ -303,7 +303,7 @@ AudioSource:
   MinDistance: 1
   MaxDistance: 500
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -406,6 +406,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHealth: 0
   maxHealth: 5
+  damageSound: {fileID: 8300000, guid: 2eba4866b9f893640b3caa410d53023a, type: 3}
 --- !u!114 &114354471254519962
 MonoBehaviour:
   m_ObjectHideFlags: 1
