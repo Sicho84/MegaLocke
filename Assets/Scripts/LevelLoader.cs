@@ -23,9 +23,10 @@ public class LevelLoader : MonoBehaviour {
 
     public void NextLevel()
     {
-        string  sceneString = nextSceneIndex.ToString();
+        
         SceneManager.LoadScene(nextSceneIndex);
-        Debug.Log("Next Scene Index " + sceneString);
+        
+       
     }
 
    public void PreviousLevel()
@@ -52,5 +53,13 @@ public class LevelLoader : MonoBehaviour {
     public void LoadMainMenu()
     {
         SceneManager.LoadScene("MainMenu");
+    }
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(gameObject.tag == "Teleport")
+        {
+            NextLevel();
+        }
     }
 }
